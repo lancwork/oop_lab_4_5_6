@@ -38,7 +38,12 @@ string SciLit::GetLevel()
 
 void SciLit::Print()
 {
-	Lit::Print();
+	//Lit::Print();
+
+	cout << "Класс:    '" << typeid(*this).name() << "'" << endl;
+	cout << "Название: " << _name << endl;
+	cout << "Автор:    " << _author << " Год: " << _year << endl;
+
 	cout << "Научная область:     " << _field << endl;
 	cout << "Науч степень автора: " << _level << endl;
 }

@@ -6,8 +6,8 @@
 class EducationLit : public virtual Lit
 {
 protected:	
-	string _discipline;//предмет
-	string _level;//Класс№
+	string _discipline;	//предмет
+	string _level;		//Класс №
 
 public:
 	EducationLit();

@@ -38,7 +38,12 @@ string EducationLit::GetLevel()
 
 void EducationLit::Print()
 {
-	Lit::Print();
+	//Lit::Print();
+
+	cout << "Класс:    '" << typeid(*this).name() << "'" << endl;
+	cout << "Название: " << _name << endl;
+	cout << "Автор:    " << _author << " Год: " << _year << endl;
+
 	cout << "Название Предмета: '" << _discipline << endl;
 	cout << "Класс: " << _level << endl;
 }

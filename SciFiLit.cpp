@@ -6,7 +6,7 @@ SciFiLit::SciFiLit() {
 
 }
 
-SciFiLit::SciFiLit(string author, string name, int year, string field, string level, GenreEnum genre, int ageRating)
+SciFiLit::SciFiLit(string author, string name, int year, string field, string level, string genre, int ageRating, string des)
 {
 	SetAuthor(author);
 	SetName(name);
@@ -15,6 +15,7 @@ SciFiLit::SciFiLit(string author, string name, int year, string field, string le
 	SetLevel(level);
 	SetGenre(genre);
 	SetAgeRating(ageRating);
+	_des = des;
 }
 
 
@@ -22,7 +23,18 @@ SciFiLit::~SciFiLit() {}
 
 void SciFiLit::Print() {
 
-	SciLit::Print();
-	cout << "Худ. Жанр:       " << GetGenreStr() << endl;
+	//SciLit::Print();
+
+	cout << "Класс:    '" << typeid(*this).name() << "'" << endl;
+	cout << "Название: " << _name << endl;
+	cout << "Автор:    " << _author << " Год: " << _year << endl;
+
+	cout << "Научная область:     " << _field << endl;
+	cout << "Науч степень автора: " << _level << endl;
+
+	cout << "Худ. Жанр:       " << _genre << endl;
 	cout << "Возрст. рейтинг: " << _ageRating << endl;
+
+	cout << "Описание " << _des << endl;
 }
+
