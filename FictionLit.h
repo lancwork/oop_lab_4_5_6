@@ -23,6 +23,8 @@ public:
 	int GetAgeRating();
 
 	virtual void Print();
+
+	virtual void Test();
 };
 
 

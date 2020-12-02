@@ -28,6 +28,7 @@ public:
 	void SetYear(int year);
 	int GetYear();
 
-	virtual void Print();
+	/*эта чистая виртуальная функция делает класс абстрактным*/
+	virtual void Print() = 0;
 };
 

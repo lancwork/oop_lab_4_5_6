@@ -49,3 +49,7 @@ void FictionLit::Print()
 	cout << "Худ. Жанр:       " << _genre << endl;
 	cout << "Возрст. рейтинг: " << _ageRating << endl;
 }
+
+void FictionLit::Test() {
+	cout << "2test FictionLit" << endl;
+}

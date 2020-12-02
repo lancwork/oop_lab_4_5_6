@@ -50,9 +50,9 @@ int Lit::GetYear()
 	return _year;
 }
 
-void Lit::Print()
-{	
-	cout << "Класс:    '" << typeid(*this).name() << "'" << endl;
-	cout << "Название: " << _name << endl;
-	cout << "Автор:    " << _author << " Год: " << _year << endl;
-}
+//void Lit::Print()
+//{	
+//	cout << "Класс:    '" << typeid(*this).name() << "'" << endl;
+//	cout << "Название: " << _name << endl;
+//	cout << "Автор:    " << _author << " Год: " << _year << endl;
+//}

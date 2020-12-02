@@ -47,3 +47,7 @@ void SciLit::Print()
 	cout << "Научная область:     " << _field << endl;
 	cout << "Науч степень автора: " << _level << endl;
 }
+
+void SciLit::Test() {
+	cout << "1test SciLit" << endl;
+}

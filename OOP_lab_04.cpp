@@ -35,11 +35,6 @@ string GetString(string msg)
 	cin >> result;
 
 	return result;
-
-	//while (true)
-	//{
-	//	if (result.length == 0)
-	//}
 }
 
 int main()
@@ -54,7 +49,7 @@ int main()
 
 	string autor;
 	string name;
-	int year;;
+	int year;
 
 	string ganre;
 	int age;
@@ -66,32 +61,35 @@ int main()
 
 	string des;
 
-	cout << "Заполнение Художественной Литературы" << endl;
-	autor = GetString("Введите автора: ");
-	name = GetString("Введите название: ");
-	year = GetInt("Введите год: ");
-	ganre = GetString("Введите жанр: ");
-	age = GetInt("Введите возрастной рейтинг: ");
-	FictionLit f_lit(autor, name, year, ganre, age);
-	cout << endl;
+	//cout << "Заполнение Художественной Литературы" << endl;
+	//autor = GetString("Введите автора: ");
+	//name = GetString("Введите название: ");
+	//year = GetInt("Введите год: ");
+	//ganre = GetString("Введите жанр: ");
+	//age = GetInt("Введите возрастной рейтинг: ");
+	//FictionLit f_lit(autor, name, year, ganre, age);
+	//cout << endl;
 
-	cout << "Заполнение Научная Литературы" << endl;
-	autor = GetString("Введите автора: ");
-	name = GetString("Введите название: ");
-	year = GetInt("Введите год: ");
-	field = GetString("Введите научную область: ");
-	level = GetString("Введите науч. степень автора: ");
-	SciLit s_lit(autor, name, year, field, level);
-	cout << endl;
+	//cout << "Заполнение Научная Литературы" << endl;
+	//autor = GetString("Введите автора: ");
+	//name = GetString("Введите название: ");
+	//year = GetInt("Введите год: ");
+	//field = GetString("Введите научную область: ");
+	//level = GetString("Введите науч. степень автора: ");
+	//SciLit s_lit(autor, name, year, field, level);
+	//cout << endl;
 
-	cout << "Заполнение Учебная Литературы" << endl;
-	autor = GetString("Введите автора: ");
-	name = GetString("Введите название: ");
-	year = GetInt("Введите год: ");
-	discipline = GetString("Введите название предмета: ");
-	level = GetString("Введите класс: ");
-	EducationLit e_lit(autor, name, year, discipline, level);
-	cout << endl;
+	//cout << "Заполнение Учебная Литературы" << endl;
+	//autor = GetString("Введите автора: ");
+	//name = GetString("Введите название: ");
+	//year = GetInt("Введите год: ");
+	//discipline = GetString("Введите название предмета: ");
+	//level = GetString("Введите класс: ");
+	//EducationLit e_lit(autor, name, year, discipline, level);
+	//cout << endl;
+
+	Lit qwe();
+
 
 	cout << "Заполнение Научной Фантастики" << endl;
 	autor = GetString("Введите автора: ");
@@ -104,6 +102,12 @@ int main()
 	des = GetString("Введите описание: ");
 	SciFiLit sf_lit(autor, name, year, field, level, ganre, age, des);
 	cout << endl;
+	
+	sf_lit.Print();
+	sf_lit.SciLit::Test();
+	sf_lit.FictionLit::Test();
+
+
 
 	//	GetString("Введите жанр: "),	//ganre
 	//	GetInt("Введите возрастной рейтинг: ")	//ageration
@@ -159,16 +163,16 @@ int main()
 	EducationLit e_lit("Автор3", "Название3", 1404, "Математика", "5");
 	SciFiLit sf_lit("Автор4", "Название4", 9999,"Космос", "Любительский", GenreEnum::Genre3, 28);
 	*/
-	lits[0] = &f_lit;
-	lits[1] = &s_lit;
-	lits[2] = &e_lit;
-	lits[3] = &sf_lit;
-	cout << "===================================" << endl;
-	for (int i = 0; i < size; i++)
-	{
-		lits[i]->Print();
-		cout << "-------------------------------" << endl;
-	}
+	//lits[0] = &f_lit;
+	//lits[1] = &s_lit;
+	//lits[2] = &e_lit;
+	//lits[3] = &sf_lit;
+	//cout << "===================================" << endl;
+	//for (int i = 0; i < size; i++)
+	//{
+	//	lits[i]->Print();
+	//	cout << "-------------------------------" << endl;
+	//}
 
 	system("pause");
 }
